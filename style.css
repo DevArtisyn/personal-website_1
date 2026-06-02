@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* background-color: #160F08; */
+  /* the color is copied from figma but dosent match for the human eyes */
+  background-color: #020305;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.sigma {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navigation Bar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #111217;
+  /* Dark navy/black background */
+  /* font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+ */
+  font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
+}
+
+/* Logo Styling ({ AMEY }) */
+.logo {
+  color: #a5b4fc;
+  /* Soft lavender/blue-gray color for 'AMEY' */
+  font-weight: 700;
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+}
+
+.logo {
+  color: #c7d2fe;
+  /* Slightly lighter shade for the curly braces */
+  font-weight: 550;
+  margin: 0 4px;
+  align-items: center;
+}
+
+/* Navigation Links Wrapper */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* Spaces out the text and separators evenly */
+}
+
+/* Individual Links (Home, About, etc.) */
+.nav-links a {
+
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+/* Subtle hover effect for better user experience */
+.nav-links a:hover {
+  color: #a5b4fc;
+}
+
+/* Vertical Pipe Separators (|) */
+.nav-links .separator {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.main-intro {
+  display: flex;
+  flex-direction: row;
+  padding: 60px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  /* justify-content: center;  */
+  /* it looks better without justify content center  */
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+.illustration {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.illustration img {
+  width: 500px;
+  height: 250px;
+  /* opacity: 0.6; */
+}
+
+@import url('https://googleapis.com');
+
+.greeting {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  margin: 0;
+  line-height: 1.1;
+  text-transform: none;
+  font-weight: 600;
+  /* Keeps the mixed case for the greeting */
+
+  /* Gradient effect */
+  background: linear-gradient(to bottom, #fff 0%, #4a4645 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -1px;
+  /* Slightly tightens the letter spacing to match the image */
+
+  /* Teal-to-Gray gradient effect */
+  background: linear-gradient(to bottom, #59c4cb 0%, #becbbd 75%, #ced2ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.discription {
+  color: #c7d2fe;
+  font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  background: linear-gradient(to bottom, #c7d2fe 0%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
