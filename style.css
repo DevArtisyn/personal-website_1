@@ -145,7 +145,104 @@ body {
   font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
   font-size: 1.5rem;
   line-height: 1.75rem;
-  background: linear-gradient(to bottom, #c7d2fe 0%, #fff 100%);
+  background: linear-gradient(to bottom, #fff 0%, #c7d2fe 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+
+.Projects .project-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: linear-gradient(to bottom, #000619 0%, #c7d2fe 100%);
+
+}
+
+.project-title h1 {
+ 
+  font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  background:  linear-gradient(to bottom, #ffffff,#65CFD1 , #011046);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.projects-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  /* same width for all cards */
+  min-height: 500px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  background: #111217;
+  transition: transform 0.3s ease;
+  gap: 25px;
+  font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
+
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* makes image fit perfectly */
+  display: block;
+}
+
+.project-name {
+  padding: 20px 20px 10px;
+
+}
+
+.project-name h2 {
+  color: #FCB875;
+  font-size: 1.4rem;
+}
+
+.project-discription {
+
+  padding: 0 20px;
+  color: #c7d2fe;
+  line-height: 1.6;
+  flex-grow: 1;
+  
+}
+
+.project-link {
+  padding: 20px;
+}
+
+.project-link a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #65CFD1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
