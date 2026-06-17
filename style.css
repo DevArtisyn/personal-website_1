@@ -11,7 +11,22 @@ body {
   background-color: #020305;
   overflow-x: hidden;
   width: 100%;
+  background:
+    linear-gradient(rgba(2, 3, 5, 0.6), rgba(2, 3, 5, 0.6)),
+    url("D:/Amey/portfolio/personal-website_1/assests/Gemini_Generated_Image_okn7rhokn7rhokn7 (1).png");
+
+
 }
+
+/* .home {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(2,3,5,0.6), rgba(2,3,5,0.6)),
+    url("D:/Amey/portfolio/personal-website_1/assests/Gemini_Generated_Image_okn7rhokn7rhokn7 (1).png");
+
+  background-size: cover;
+  background-position: center;
+} */
 
 .sigma {
   font-family: 'Playfair Display', serif;
@@ -99,13 +114,26 @@ body {
   padding: 20px;
   align-items: center;
   justify-content: center;
-
+     
 }
 
 .illustration img {
   width: 500px;
   height: 250px;
   /* opacity: 0.6; */
+   border: 2px solid transparent; 
+  
+  /* Apply your border-radius */
+  border-radius: 12px; 
+  
+  /* First gradient is the inner background (e.g., dark gray). Second is the border gradient. */
+  background-image: linear-gradient(#1a1a1a, #1a1a1a), 
+                    linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  
+  /* Clip the first background to content/padding, and the second to the border area */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
 }
 
 @import url('https://googleapis.com');
@@ -150,6 +178,30 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.main-intro button{
+  width: 200px;
+  height:3rem;
+  border-radius:15px;
+  border: 2px solid transparent;
+
+  /* Apply your border-radius */
+  border-radius: 12px;
+
+  /* First gradient is the inner background (e.g., dark gray). Second is the border gradient. */
+  background-image: linear-gradient(#1a1a1a, #1a1a1a),
+    linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+
+  /* Clip the first background to content/padding, and the second to the border area */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.main-intro button a{
+  font-family:'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif ;
+  font-size:20px;
+  color:#E6DED3;
+  text-decoration: none;
+}
 
 
 .Projects .project-title {
@@ -161,11 +213,11 @@ body {
 }
 
 .project-title h1 {
- 
+
   font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
   font-size: 3rem;
   font-weight: 700;
-  background:  linear-gradient(to bottom, #ffffff,#65CFD1 , #011046);
+  background: linear-gradient(to bottom, #ffffff, #65CFD1, #011046);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -193,7 +245,18 @@ body {
   transition: transform 0.3s ease;
   gap: 25px;
   font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
+  border: 2px solid transparent;
 
+  /* Apply your border-radius */
+  border-radius: 12px;
+
+  /* First gradient is the inner background (e.g., dark gray). Second is the border gradient. */
+  background-image: linear-gradient(#1a1a1a, #1a1a1a),
+    linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+
+  /* Clip the first background to content/padding, and the second to the border area */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .project-card:hover {
@@ -230,7 +293,7 @@ body {
   color: #c7d2fe;
   line-height: 1.6;
   flex-grow: 1;
-  
+
 }
 
 .project-link {
@@ -245,4 +308,3 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
-
