@@ -210,10 +210,10 @@ body {
 
 .project-title h1 {
 
-  font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
-  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
   font-weight: 900;
-  background: linear-gradient(to bottom, #ffffff, #65CFD1, #011046);
+  background: linear-gradient(to bottom, #ffffff, #65CFD1, #0000);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
