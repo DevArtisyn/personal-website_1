@@ -206,14 +206,15 @@ body {
 }
 
 .project-title h1 {
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
+  font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
+  /* font-family: 'League Spartan', sans-serif; */
+  font-size: 3.75rem;
   font-weight: 900;
   background: linear-gradient(to bottom, #ffffff, #65CFD1, #0000);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  letter-spacing: 2px;
 }
 
 .projects-block {
@@ -338,27 +339,30 @@ body {
 }
 
 .skill-title h1 {
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 900;
+  font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
+  /* font-family: 'League Spartan', sans-serif; */
+  font-size: 3.75rem;
+  font-weight: 1000;
   background: linear-gradient(to bottom, #ffffff, #65CFD1, #0000);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  letter-spacing: 2px;
 }
 
-.tools{
-  display:flex;
-  height:500px;
-  padding:60px;
-  gap:20px;
+.tools {
+  display: flex;
+  height: 500px;
+  padding: 60px;
+  gap: 30px;
   /* flex-direction: row; */
   flex-wrap: wrap;
 
 }
 
-.tools .tools-ball{
+/* previous styling of balls with some blue and violet color */
+
+/* .tools .tools-ball{
   animation: spin 1s linear infinite;
   width: 150px;
   height: 150px;
@@ -378,12 +382,83 @@ body {
   justify-content: center;
   
   
+} */
+.tools .tools-ball {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Glass body */
+  background:
+    radial-gradient(circle at 28% 25%,
+      rgba(255, 255, 255, .45) 0%,
+      rgba(163, 176, 246, .28) 18%,
+      rgba(163, 176, 246, .12) 35%,
+      rgba(8, 12, 18, .82) 100%);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1.5px solid rgba(255, 255, 255, .18);
+
+  box-shadow:
+
+    /* Bright top reflection */
+    inset 18px 18px 35px rgba(255, 255, 255, .22),
+
+    /* Main Indigo glass glow */
+    inset 12px 10px 55px rgba(163, 176, 246, .55),
+
+    /* Cyan accent */
+    inset -15px 0 50px rgba(0, 206, 168, .18),
+
+    /* Purple accent */
+    inset 15px -15px 40px rgba(191, 97, 255, .15),
+
+    /* Dark depth */
+    inset -12px -18px 35px rgba(0, 0, 0, .55),
+
+    /* Soft center darkness */
+    inset 0 0 70px rgba(0, 0, 0, .35),
+
+    /* Outside glow */
+    0 18px 40px rgba(0, 0, 0, .55),
+
+    /* Indigo halo */
+    0 0 35px rgba(163, 176, 246, .28),
+
+    /* Cyan halo */
+    0 0 28px rgba(0, 206, 168, .18),
+
+    /* Violet halo */
+    0 0 40px rgba(191, 97, 255, .12);
+
+  transition: all .45s ease;
+  background-image: linear-gradient(#1a1a1a, #1a1a1a),
+    linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  /* This will create a blurred silhouette of the element's edges */
+  filter: drop-shadow(0px 10px 20px rgba(0, 206, 168, 0.3)) drop-shadow(0px 10px 20px rgba(191, 97, 255, 0.3));
+
 }
 
-.tools-image img {
+/* .tools-image img {
   width: 100px;
   height: 100px;
   opacity: 0.75;
   border-radius: 50%;
   
+} */
+.tools-image img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  opacity: .9;
+  filter:
+    drop-shadow(0 0 12px rgba(255, 255, 255, .15));
+  transition: .4s ease;
 }
