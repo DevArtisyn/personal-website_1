@@ -206,10 +206,10 @@ body {
 }
 
 .project-title h1 {
-  font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
-  /* font-family: 'League Spartan', sans-serif; */
-  font-size: 3.75rem;
-  font-weight: 900;
+  /* font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif; */
+  font-family: 'League Spartan', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 600;
   background: linear-gradient(to bottom, #ffffff, #65CFD1, #0000);
   -webkit-background-clip: text;
   background-clip: text;
@@ -275,7 +275,8 @@ body {
 }
 
 .project-name h2 {
-  color: #FCB875; /* color:#E6DED3; */
+  color: #FCB875;
+  /* color:#E6DED3; */
   font-size: 1.4rem;
 }
 
@@ -339,10 +340,10 @@ body {
 }
 
 .skill-title h1 {
-  font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
-  /* font-family: 'League Spartan', sans-serif; */
-  font-size: 3.75rem;
-  font-weight: 1000;
+  /* font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif; */
+  font-family: 'League Spartan', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 600;
   background: linear-gradient(to bottom, #ffffff, #65CFD1, #0000);
   -webkit-background-clip: text;
   background-clip: text;
@@ -459,4 +460,107 @@ body {
   filter:
     drop-shadow(0 0 12px rgba(255, 255, 255, .15));
   transition: .4s ease;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 70px 40px;
+  gap: 45px;
+}
+
+/* ---------- Title ---------- */
+
+.edc-title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.edc-title h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  background: linear-gradient(to bottom, #ffffff, #65CFD1, #0000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Main Row ---------- */
+
+.edc-discription {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ---------- Left Side ---------- */
+
+.edc-discription-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.my-journey {
+
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
+  line-height: 1;
+  background: linear-gradient(to bottom, #59c4cb  0%, #becbbd 75%, #ced2ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.my-journey h2 {
+  margin: 0;
+}
+
+.edc-discription section {
+  max-width: 650px;
+  text-align: left;
+
+  font-family: 'Geom', 'Poppins', 'Futura', 'Century Gothic', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.8;
+
+  /* background: linear-gradient(to bottom, #c7d2fe 0%,  #E6DED3 60%); */
+  background: linear-gradient(to bottom, #fff 0%, #4a4645 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---------- Right Side ---------- */
+
+.edc-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edc-illustration img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  background-image:
+    linear-gradient(#1a1a1a, #1a1a1a),
+    linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  filter:
+    drop-shadow(0 10px 20px rgba(0, 206, 168, .3)) drop-shadow(0 10px 20px rgba(191, 97, 255, .3));
 }
